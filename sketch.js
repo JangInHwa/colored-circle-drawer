@@ -13,13 +13,6 @@ function draw() {
 	ellipse(mouseX, mouseY, 100)
 }
 
-function mousePressed() {
-	r = random(255)
-	g = random(255)
-	b = random(255)
-	background(r, g, b)
-	fill(255 - r, 255 - g, 255 - b)
-}
 
 function touchMoved() {
 	// do some stuff
@@ -27,9 +20,11 @@ function touchMoved() {
 }
 
 function touchStarted() {
+	console.log('touch')
 	r = random(255)
 	g = random(255)
 	b = random(255)
 	background(r, g, b)
 	fill(255 - r, 255 - g, 255 - b)
+	return false;
 }
