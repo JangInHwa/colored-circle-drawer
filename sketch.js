@@ -20,3 +20,12 @@ function mousePressed() {
 	background(r, g, b)
 	fill(255 - r, 255 - g, 255 - b)
 }
+
+function touchMoved() {
+	// do some stuff
+	return false;
+}
+
+function touchStarted() {
+
+}
